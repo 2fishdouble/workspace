@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.dcj.authenticationclient.fallback.AuthenticationFallbackFactory,\
+com.dcj.authenticationclient.config.FeignConfig
