@@ -1,6 +1,7 @@
 package com.dcj.authentication.controller;
 
 import com.dcj.authentication.config.refresh.NacosConfigurationPropertiesSample;
+import com.dcj.authentication.config.refresh.NacosPropertiesSample;
 import com.dcj.authentication.config.refresh.NacosValueSample;
 import com.dcj.authentication.config.refresh.PropertyConfig;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,8 @@ public class AuthenticationController {
     private NacosConfigurationPropertiesSample nacosConfigurationPropertiesSample;
     @Autowired
     private NacosValueSample nacosValueSample;
+    @Autowired
+    private NacosPropertiesSample nacosPropertiesSample;
 
     // region 动态刷新
     @GetMapping("/propertyConfigDetail")
@@ -34,6 +37,7 @@ public class AuthenticationController {
         System.out.println(propertyConfig.getName());
         System.out.println(nacosConfigurationPropertiesSample.getName());
         System.out.println(nacosValueSample.getName());
+        System.out.println(nacosPropertiesSample.getName());
 
     }
 
