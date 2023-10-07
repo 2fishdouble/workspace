@@ -1,4 +1,4 @@
-package com.dcj.authentication.config;
+package com.dcj.authentication.config.refresh;
 
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Value;
