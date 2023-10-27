@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @date : 2023-06-09
  **/
 @RestController
-@RequestMapping("/authentication")
+@RequestMapping("/auth")
 public class AuthenticationController {
 
     @GetMapping("/run")

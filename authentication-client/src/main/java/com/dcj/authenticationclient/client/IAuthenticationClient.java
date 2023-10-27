@@ -14,6 +14,6 @@ import org.springframework.web.bind.annotation.GetMapping;
  */
 @FeignClient(value = "authentication")
 public interface IAuthenticationClient {
-    @GetMapping("/authentication/run")
+    @GetMapping("/auth/run")
     void run();
 }
